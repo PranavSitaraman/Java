@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAD3A1B0-118B-45CD-94D7-DBBF352482FF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSE</RootNamespace>
+    <AssemblyName>CSE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Section4\ImportDemo\FullyQualifiedName.java" />
+    <Content Include="Section4\ImportDemo\Welcome.java" />
+    <Content Include="Section4\ImportDemo\Welcome2.java" />
+    <Content Include="Section4\ImportEx\AddImport.java" />
+    <Content Include="Section4\MathDemo\AgeLimit.java" />
+    <Content Include="Section4\MathDemo\AreaOfCircle.java" />
+    <Content Include="Section4\MathDemo\PrintMathResult.java" />
+    <Content Include="Section4\MathEx\ComputeBMI.java" />
+    <Content Include="Section4\ProblemSet4_1\ComputeMethods.java" />
+    <Content Include="Section4\ProblemSet4_1\TestClass.java" />
+    <Content Include="Section4\ProblemSet4_2\ProcessName.java" />
+    <Content Include="Section4\RandomEx\FlipCoin.java" />
+    <Content Include="Section4\RandomEx\RockPaperScissor.java" />
+    <Content Include="Section4\RandomNumsDemo\CoinFlip.java" />
+    <Content Include="Section4\RandomNumsDemo\Lottery.java" />
+    <Content Include="Section4\RandomNumsDemo\Quiz.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomDouble.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomNum.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomNumRange.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomNumSeed.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomNumSeries.java" />
+    <Content Include="Section4\RandomNumsDemo\RandomSeriesSeed.java" />
+    <Content Include="Section4\RandomNumsDemo\RockPaperScissor.java" />
+    <Content Include="Section4\RandomNumsDemo\RollingDice.java" />
+    <Content Include="Section4\StringDemo\StringComparison.java" />
+    <Content Include="Section4\StringDemo\StringConcatenate.java" />
+    <Content Include="Section4\StringDemo\StringConcatenate1.java" />
+    <Content Include="Section4\StringDemo\StringExtraction.java" />
+    <Content Include="Section4\StringDemo\StringIndexOf.java" />
+    <Content Include="Section4\StringDemo\StringReplace.java" />
+    <Content Include="Section4\StringDemo\StringReplaceFirst.java" />
+    <Content Include="Section4\StringsEx\NameMaker.java" />
+    <Content Include="Section4\StringsEx\ShoppingCart.java" />
+    <Content Include="Section4\Tip04\Calculator.java" />
+    <Content Include="Section4\Tip04\CalculatorTest.java" />
+    <Content Include="Section4\Tip03\Calculator.java" />
+    <Content Include="Section4\Tip03\CalculatorTest.java" />
+    <Content Include="Section4\Tip02\Calculator.java" />
+    <Content Include="Section4\Tip02\CalculatorTest.java" />
+    <Content Include="Section3\Input01.java" />
+    <Content Include="Section3\Casting01.java" />
+    <Content Include="Section3\Casting02.java" />
+    <Content Include="Section3\Chickens01.java" />
+    <Content Include="Section3\Chickens02.java" />
+    <Content Include="Section3\Input02.java" />
+    <Content Include="Section3\Input03.java" />
+    <Content Include="Section3\Input04.java" />
+    <Content Include="Section3\input04text.txt" />
+    <Content Include="Section3\JavaLibs.java" />
+    <Content Include="Section3\Level05.txt" />
+    <Content Include="main.java" />
+    <Content Include="Section3\Parsing01.java" />
+    <Content Include="Section2\ProblemSet2_1.java" />
+    <Content Include="Section2\ProblemSet2_2.java" />
+    <Content Include="Section1\Addition.java" />
+    <Content Include="Section1\HelloWorld.java" />
+    <Content Include="Section2\Text01.java" />
+    <Content Include="Section2\Text02.java" />
+    <Content Include="Section2\Text03.java" />
+    <Content Include="Section3\ShoppingCart01.java" />
+    <Content Include="Section3\ShoppingCart02.java" />
+    <Content Include="Section3\Variables02.java" />
+    <Content Include="Section3\Variables03.java" />
+    <Content Include="Section4\Tip01\Tip01.java" />
+    <Content Include="Section5\ConditionalDemo\ChainedIf.java" />
+    <Content Include="Section5\ConditionalDemo\ScholarshipAnd.java" />
+    <Content Include="Section5\ConditionalDemo\ScholarshipIf.java" />
+    <Content Include="Section5\ConditionalDemo\ScholarshipNot.java" />
+    <Content Include="Section5\ConditionalDemo\ScholarshipOr.java" />
+    <Content Include="Section5\ConditionalDemo\SoccerIf.java" />
+    <Content Include="Section5\ConditionalDemo\TernaryOperator.java" />
+    <Content Include="Section5\ConditionalDemo\TernaryOperator1.java" />
+    <Content Include="Section5\ConditionalEx\ComputeFare.java" />
+    <Content Include="Section5\ConditionalEx\TernaryOperator.java" />
+    <Content Include="Section5\ConditionalEx\WatchMovie.java" />
+    <Content Include="Section5\IfElseDemo\BooleanDemo.java" />
+    <Content Include="Section5\IfElseDemo\BooleanDriving.java" />
+    <Content Include="Section5\IfElseDemo\BooleanIfDriving.java" />
+    <Content Include="Section5\IfElseDemo\EqualityString.java" />
+    <Content Include="Section5\IfElseDemo\EqualityString1.java" />
+    <Content Include="Section5\IfElseDemo\EqualityString2.java" />
+    <Content Include="Section5\IfElseDemo\EqualityString3.java" />
+    <Content Include="Section5\IfElseDemo\EqualityTest.java" />
+    <Content Include="Section5\IfElseDemo\IfDemo.java" />
+    <Content Include="Section5\IfElseDemo\IfDemo1.java" />
+    <Content Include="Section5\IfElseDemo\IfElseDemo.java" />
+    <Content Include="Section5\IfElseDemo\IfElseDemo1.java" />
+    <Content Include="Section5\IfElseDemo\IfElseDemo2.java" />
+    <Content Include="Section5\IfElseDemo\RelationalDemo.java" />
+    <Content Include="Section5\IfElseEx\AgeCheck.java" />
+    <Content Include="Section5\IfElseEx\AgeValidity.java" />
+    <Content Include="Section5\IfElseEx\ChkOddEven.java" />
+    <Content Include="Section5\IfElseEx\ShoppingCart.java" />
+    <Content Include="Section5\IfElseEx\StringEquality.java" />
+    <Content Include="Section5\ProblemSet5_1\ColorRange.java" />
+    <Content Include="Section5\ProblemSet5_2\TrafficLightChecker.java" />
+    <Content Include="Section5\ProblemSet5_3\TrafficLightSwitch.java" />
+    <Content Include="Section5\SwitchDemo\IfSolution.java" />
+    <Content Include="Section5\SwitchDemo\IfSolution1.java" />
+    <Content Include="Section5\SwitchDemo\SalesWinners.java" />
+    <Content Include="Section5\SwitchDemo\SwitchFallThru.java" />
+    <Content Include="Section5\SwitchDemo\SwitchSolution.java" />
+    <Content Include="Section5\SwitchDemo\VariableCount.java" />
+    <Content Include="Section5\SwitchEx\SwitchEx1.java" />
+    <Content Include="Section5\SwitchEx\SwitchEx2.java" />
+    <Content Include="Section6\BreakContinueDemo\BreakDemo.java" />
+    <Content Include="Section6\BreakContinueDemo\ContinueDemo.java" />
+    <Content Include="Section6\BreakContinueDemo\ContinueFor.java" />
+    <Content Include="Section6\BreakContinueDemo\ContinueWhile.java" />
+    <Content Include="Section6\BreakContinueDemo\UsingBreak.java" />
+    <Content Include="Section6\BreakContinueDemo\UsingBreakWhile.java" />
+    <Content Include="Section6\BreakContinueDemo\UsingContinue.java" />
+    <Content Include="Section6\BreakContinueEx\BreakContinue.java" />
+    <Content Include="Section6\BreakContinueEx\ComputeSum.java" />
+    <Content Include="Section6\BreakContinueEx\CountChar.java" />
+    <Content Include="Section6\BreakContinueEx\Divisors.java" />
+    <Content Include="Section6\ForLoopsDemo\CountingDown.java" />
+    <Content Include="Section6\ForLoopsDemo\NumSquare.java" />
+    <Content Include="Section6\ForLoopsDemo\VariableScopeDemo.java" />
+    <Content Include="Section6\ForLoopsEx\Countdown.java" />
+    <Content Include="Section6\ForLoopsEx\InfiniteLoop.java" />
+    <Content Include="Section6\ForLoopsEx\ScopeTest.java" />
+    <Content Include="Section6\ProblemSet6_1\ValidatePin.java" />
+    <Content Include="Section6\ProblemSet6_2\DisplayMultiples.java" />
+    <Content Include="Section6\ProblemSet6_3\LoopShape.java" />
+    <Content Include="Section6\ProblemSet6_3\LoopShapeTest.java" />
+    <Content Include="Section5\Quiz.java" />
+    <Content Include="Section6\Quiz.java" />
+    <Content Include="Section6\WhileLoopDemo\DoWhileLoopDemo.java" />
+    <Content Include="Section6\WhileLoopDemo\InfiniteLoopDemo.java" />
+    <Content Include="Section6\WhileLoopDemo\PalindromeTester.java" />
+    <Content Include="Section6\WhileLoopDemo\WhileLoopDemo.java" />
+    <Content Include="Section6\WhileLoopExercise\SquareRootWhile.java" />
+    <Content Include="Section6\WhileLoopExercise\SumofNums.java" />
+    <Content Include="Section7\AccountTest\AccountTest.java" />
+    <Content Include="Section7\AccountTest\CheckingAccount.java" />
+    <Content Include="Section7\AccountTest\SavingsBond.java" />
+    <Content Include="Section7\PrisonTest_2\Prisoner.java" />
+    <Content Include="Section7\PrisonTest_2\PrisonTest.java" />
+    <Content Include="Section7\PrisonTest_3\Prisoner.java" />
+    <Content Include="Section7\PrisonTest_3\PrisonTest.java" />
+    <Content Include="Section7\PrisonTest_4\Prisoner.java" />
+    <Content Include="Section7\PrisonTest_4\PrisonTest.java" />
+    <Content Include="Section7\PrisonTest_5\Cell.java" />
+    <Content Include="Section7\PrisonTest_5\Prisoner.java" />
+    <Content Include="Section7\PrisonTest_5\PrisonTest.java" />
+    <Content Include="Section7\PrisonTest_6\Cell.java" />
+    <Content Include="Section7\PrisonTest_6\Prisoner.java" />
+    <Content Include="Section7\PrisonTest_6\PrisonTest.java" />
+    <Content Include="Section7\ProblemSet7\Card.java" />
+    <Content Include="Section7\ProblemSet7\Game.java" />
+    <Content Include="Section7\ProblemSet7\Prize.java" />
+    <Content Include="Section7\ProblemSet7\ProblemSet07.java" />
+    <Content Include="Section7\ProblemSet7\Terminal.java" />
+    <Content Include="Section7\Project\Board.java" />
+    <Content Include="Section7\Project\Game.java" />
+    <Content Include="Section7\Project\Minimax.java" />
+    <Content Include="Section7\Project\Move.java" />
+    <Content Include="Section7\Project\TicTacToe.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
+    <None Include="Section2\ProblemSet2_3.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

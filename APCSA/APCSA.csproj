@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D22F16C6-2C36-40A3-97BE-9A7B54B870F0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>APCSA</RootNamespace>
+    <AssemblyName>APCSA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frqs\Array-ArrayList\Heights\HeightMapA.java" />
+    <Content Include="frqs\Array-ArrayList\Heights\HeightMapB.java" />
+    <Content Include="frqs\Array-ArrayList\HotelRooms\HotelRoomsA\OccupancyInfo.java" />
+    <Content Include="frqs\Array-ArrayList\HotelRooms\HotelRoomsA\Room.java" />
+    <Content Include="frqs\Array-ArrayList\HotelRooms\HotelRoomsB\OccupancyInfo.java" />
+    <Content Include="frqs\Array-ArrayList\HotelRooms\HotelRoomsB\Room.java" />
+    <Content Include="frqs\Array-ArrayList\Warehouse\WarehouseA\Product.java" />
+    <Content Include="frqs\Array-ArrayList\Warehouse\WarehouseA\Warehouse.java" />
+    <Content Include="frqs\Array-ArrayList\Warehouse\WarehouseB\Product.java" />
+    <Content Include="frqs\Array-ArrayList\Warehouse\WarehouseB\Warehouse.java" />
+    <Content Include="frqs\Class\Fundraiser.java" />
+    <Content Include="frqs\Class\Position.java" />
+    <Content Include="frqs\Class\TriangleNumberTracker.java" />
+    <Content Include="frqs\Methods and Control Structures\CaesarCipher\CaesarCipherA.java" />
+    <Content Include="frqs\Methods and Control Structures\CaesarCipher\CaesarCipherB.java" />
+    <Content Include="frqs\Methods and Control Structures\DigitSummarizer\DigitSummarizerA.java" />
+    <Content Include="frqs\Methods and Control Structures\DigitSummarizer\DigitSummarizerB.java" />
+    <Content Include="frqs\Methods and Control Structures\PrimeFinder\PrimeFinderA.java" />
+    <Content Include="frqs\Methods and Control Structures\PrimeFinder\PrimeFinderB.java" />
+    <Content Include="main.java" />
+    <Content Include="unit10\lesson1\runner_U10_L1_Activity_One.java" />
+    <Content Include="unit10\lesson1\U10_L1_Activity_One.java" />
+    <Content Include="unit10\lesson2\runner_U10_L2_Activity_One.java" />
+    <Content Include="unit10\lesson2\U10_L2_Activity_One.java" />
+    <Content Include="unit10\U10_Assignment\AnagramList.java" />
+    <Content Include="unit10\U10_Assignment\runner_AnagramList.java" />
+    <Content Include="unit1\lesson1\U1L1Q1.java" />
+    <Content Include="unit1\lesson1\U1L1Q2.java" />
+    <Content Include="unit1\lesson1\U1L1Q3.java" />
+    <Content Include="unit1\lesson2\U1L2Q1.java" />
+    <Content Include="unit1\lesson2\U1L2Q2.java" />
+    <Content Include="unit1\lesson2\U1L2Q3.java" />
+    <Content Include="unit1\lesson3\U1L3Q1.java" />
+    <Content Include="unit1\lesson3\U1L3Q2.java" />
+    <Content Include="unit1\lesson3\U1L3Q3.java" />
+    <Content Include="unit1\lesson4\U1L4Q1.java" />
+    <Content Include="unit1\lesson4\U1L4Q2.java" />
+    <Content Include="unit1\lesson4\U1L4Q3.java" />
+    <Content Include="unit1\lesson4\U1L4Q4.java" />
+    <Content Include="unit1\lesson5\U1L5Q1.java" />
+    <Content Include="unit1\lesson5\U1L5Q2.java" />
+    <Content Include="unit1\lesson6\U1L6Q1.java" />
+    <Content Include="unit1\lesson6\U1L6Q2.java" />
+    <Content Include="unit1\lesson6\U1L6Q3.java" />
+    <Content Include="unit1\U1_Assignment.java" />
+    <Content Include="unit2\lesson1\U2L1Q1.java" />
+    <Content Include="unit2\lesson1\U2L1Q2.java" />
+    <Content Include="unit2\lesson2\U2L2Q1.java" />
+    <Content Include="unit2\lesson2\U2L2Q2.java" />
+    <Content Include="unit2\lesson2\U2L2Q3.java" />
+    <Content Include="unit2\lesson3\U2L3Q1.java" />
+    <Content Include="unit2\lesson3\U2L3Q2.java" />
+    <Content Include="unit2\lesson3\U2L3Q3.java" />
+    <Content Include="unit2\lesson3\U2L3Q4.java" />
+    <Content Include="unit2\lesson4\U2L4Q1.java" />
+    <Content Include="unit2\lesson4\U2L4Q2.java" />
+    <Content Include="unit2\lesson5\U2L5Q1.java" />
+    <Content Include="unit2\lesson5\U2L5Q2.java" />
+    <Content Include="unit2\lesson5\U2L5Q3.java" />
+    <Content Include="unit2\lesson6\U2L6Q1.java" />
+    <Content Include="unit2\lesson6\U2L6Q2.java" />
+    <Content Include="unit2\lesson7\U2L7Q1.java" />
+    <Content Include="unit2\lesson7\U2L7Q2.java" />
+    <Content Include="unit2\lesson7\U2L7Q3.java" />
+    <Content Include="unit2\lesson8\U2L8Q1.java" />
+    <Content Include="unit2\lesson8\U2L8Q2.java" />
+    <Content Include="unit2\lesson8\U2L8Q3.java" />
+    <Content Include="unit2\U2_Assignment.java" />
+    <Content Include="unit3\lesson1\U3L1Q1.java" />
+    <Content Include="unit3\lesson1\U3L1Q2.java" />
+    <Content Include="unit3\lesson1\U3L1Q3.java" />
+    <Content Include="unit3\lesson1\U3L1Q4.java" />
+    <Content Include="unit3\lesson2\U3L2Q1.java" />
+    <Content Include="unit3\lesson2\U3L2Q2.java" />
+    <Content Include="unit3\lesson2\U3L2Q3.java" />
+    <Content Include="unit3\lesson2\U3L2Q4.java" />
+    <Content Include="unit3\lesson3\U3L3Q1.java" />
+    <Content Include="unit3\lesson3\U3L3Q2.java" />
+    <Content Include="unit3\lesson3\U3L3Q3.java" />
+    <Content Include="unit3\lesson3\U3L3Q4.java" />
+    <Content Include="unit3\lesson4\U3L4Q1.java" />
+    <Content Include="unit3\lesson4\U3L4Q2.java" />
+    <Content Include="unit3\lesson4\U3L4Q3.java" />
+    <Content Include="unit3\lesson5\U3L5Q1.java" />
+    <Content Include="unit3\lesson5\U3L5Q2.java" />
+    <Content Include="unit3\lesson6\U3L6Q1.java" />
+    <Content Include="unit3\lesson6\U3L6Q2.java" />
+    <Content Include="unit3\lesson7\U3L7Q1.java" />
+    <Content Include="unit3\lesson7\U3L7Q2.java" />
+    <Content Include="unit3\lesson7\U3L7Q3.java" />
+    <Content Include="unit3\U3_Assignment.java" />
+    <Content Include="unit4\consumer-review\activity1\negativeAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity1\positiveAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity1\Review.java" />
+    <Content Include="unit4\consumer-review\activity1\TestReview.java" />
+    <Content Include="unit4\consumer-review\activity2\26WestReview.txt" />
+    <Content Include="unit4\consumer-review\activity2\negativeAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity2\positiveAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity2\Review.java" />
+    <Content Include="unit4\consumer-review\activity2\ReviewSample1.txt" />
+    <Content Include="unit4\consumer-review\activity2\ReviewSample2.txt" />
+    <Content Include="unit4\consumer-review\activity2\SimpleReview.txt" />
+    <Content Include="unit4\consumer-review\activity2\TestReview.java" />
+    <Content Include="unit4\consumer-review\activity3\negativeAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity3\positiveAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity3\Review.java" />
+    <Content Include="unit4\consumer-review\activity3\SimpleReview.txt" />
+    <Content Include="unit4\consumer-review\activity3\TestReview.java" />
+    <Content Include="unit4\consumer-review\activity4\negativeAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity4\positiveAdjectives.txt" />
+    <Content Include="unit4\consumer-review\activity4\Review.java" />
+    <Content Include="unit4\consumer-review\activity4\TestReview.java" />
+    <Content Include="unit4\consumer-review\activity5\Review.java" />
+    <Content Include="unit4\lesson1.5\U4L1.5Q1.java" />
+    <Content Include="unit4\lesson1.5\U4L1.5Q2.java" />
+    <Content Include="unit4\lesson1\U4L1Q1.java" />
+    <Content Include="unit4\lesson1\U4L1Q2.java" />
+    <Content Include="unit4\lesson1\U4L1Q3.java" />
+    <Content Include="unit4\lesson2\U4L2Q1.java" />
+    <Content Include="unit4\lesson2\U4L2Q2.java" />
+    <Content Include="unit4\lesson2\U4L2Q3.java" />
+    <Content Include="unit4\lesson3\U4L3Q1.java" />
+    <Content Include="unit4\lesson3\U4L3Q2.java" />
+    <Content Include="unit4\lesson3\U4L3Q3.java" />
+    <Content Include="unit4\lesson3\U4L3Q4.java" />
+    <Content Include="unit4\lesson4\U4L4Q1.java" />
+    <Content Include="unit4\lesson4\U4L4Q2.java" />
+    <Content Include="unit4\lesson4\U4L4Q3.java" />
+    <Content Include="unit4\lesson5\U4L5Q1.java" />
+    <Content Include="unit4\lesson5\U4L5Q2.java" />
+    <Content Include="unit4\U4_Assignment.java" />
+    <Content Include="unit5\lesson1\U5L1Q1.java" />
+    <Content Include="unit5\lesson2\U5L2Q1.java" />
+    <Content Include="unit5\lesson2\U5L2Q2.java" />
+    <Content Include="unit5\lesson2\U5L2Q3.java" />
+    <Content Include="unit5\lesson2\U5L2Q4.java" />
+    <Content Include="unit5\lesson3\U5L3Q1.java" />
+    <Content Include="unit5\lesson3\U5L3Q2.java" />
+    <Content Include="unit5\lesson3\U5L3Q3.java" />
+    <Content Include="unit5\lesson4\U5L4Q1.java" />
+    <Content Include="unit5\lesson4\U5L4Q2.java" />
+    <Content Include="unit5\lesson4\U5L4Q3.java" />
+    <Content Include="unit5\lesson4\U5L4Q4.java" />
+    <Content Include="unit5\lesson5\U5L5Q1\Post.java" />
+    <Content Include="unit5\lesson5\U5L5Q1\runner_Post.java" />
+    <Content Include="unit5\lesson5\U5L5Q2\Elevator.java" />
+    <Content Include="unit5\lesson5\U5L5Q2\runner_Elevator.java" />
+    <Content Include="unit5\lesson6\U5L6Q1\runner_Vehicle.java" />
+    <Content Include="unit5\lesson6\U5L6Q1\Vehicle.java" />
+    <Content Include="unit5\lesson7\U5L7Q1\RightTriangle.java" />
+    <Content Include="unit5\lesson7\U5L7Q1\runner_RightTriangle.java" />
+    <Content Include="unit5\lesson8\U5L8Q1\runner_Student.java" />
+    <Content Include="unit5\lesson8\U5L8Q1\Student.java" />
+    <Content Include="unit5\U5_Assignment\Fraction.java" />
+    <Content Include="unit5\U5_Assignment\runner_Fraction.java" />
+    <Content Include="unit6\lesson1\U6L1Q1.java" />
+    <Content Include="unit6\lesson1\U6L1Q2.java" />
+    <Content Include="unit6\lesson2\U6L2Q1\runner_U6_L2_Activity_One.java" />
+    <Content Include="unit6\lesson2\U6L2Q1\U6_L2_Activity_One.java" />
+    <Content Include="unit6\lesson2\U6L2Q2\runner_U6_L2_Activity_Two.java" />
+    <Content Include="unit6\lesson2\U6L2Q2\U6_L2_Activity_Two.java" />
+    <Content Include="unit6\lesson2\U6L2Q3\runner_U6_L2_Activity_Three.java" />
+    <Content Include="unit6\lesson2\U6L2Q3\U6_L2_Activity_Three.java" />
+    <Content Include="unit6\lesson3\U6L3Q1\runner_U6_L3_Activity_One.java" />
+    <Content Include="unit6\lesson3\U6L3Q1\U6_L3_Activity_One.java" />
+    <Content Include="unit6\lesson3\U6L3Q2\runner_U6_L3_Activity_Two.java" />
+    <Content Include="unit6\lesson3\U6L3Q2\U6_L3_Activity_Two.java" />
+    <Content Include="unit6\lesson3\U6L3Q3\runner_U6_L3_Activity_Three.java" />
+    <Content Include="unit6\lesson3\U6L3Q3\U6_L3_Activity_Three.java" />
+    <Content Include="unit6\lesson4\U6L4Q1\runner_U6_L4_Activity_One.java" />
+    <Content Include="unit6\lesson4\U6L4Q1\U6_L4_Activity_One.java" />
+    <Content Include="unit6\lesson4\U6L4Q2\runner_U6_L4_Activity_Two.java" />
+    <Content Include="unit6\lesson4\U6L4Q2\U6_L4_Activity_Two.java" />
+    <Content Include="unit6\lesson5\U6L5Q1\runner_U6_L5_Activity_One.java" />
+    <Content Include="unit6\lesson5\U6L5Q1\U6_L5_Activity_One.java" />
+    <Content Include="unit6\lesson5\U6L5Q2\runner_U6_L5_Activity_Two.java" />
+    <Content Include="unit6\lesson5\U6L5Q2\U6_L5_Activity_Two.java" />
+    <Content Include="unit6\lesson5\U6L5Q3\runner_U6_L5_Activity_Three.java" />
+    <Content Include="unit6\lesson5\U6L5Q3\U6_L5_Activity_Three.java" />
+    <Content Include="unit6\U6_Assignment\NumStatsArray.java" />
+    <Content Include="unit6\U6_Assignment\runner_StatsArray.java" />
+    <Content Include="unit6\U6_Assignment\StringStatsArray.java" />
+    <Content Include="unit7\data-lab\Cereal.java" />
+    <Content Include="unit7\data-lab\Main.java" />
+    <Content Include="unit7\data-lab\WeatherStation.java" />
+    <Content Include="unit7\data-lab\Welcome01.java" />
+    <Content Include="unit7\data-lab\Welcome02_Object.java" />
+    <Content Include="unit7\data-lab\Welcome03_List.java" />
+    <Content Include="unit7\lesson1\U7L1Q1.java" />
+    <Content Include="unit7\lesson2\U7L2Q1.java" />
+    <Content Include="unit7\lesson2\U7L2Q2\runner_U7_L2_Activity_Two.java" />
+    <Content Include="unit7\lesson2\U7L2Q2\U7_L2_Activity_Two.java" />
+    <Content Include="unit7\lesson2\U7L2Q3\runner_U7_L2_Activity_Three.java" />
+    <Content Include="unit7\lesson2\U7L2Q3\U7_L2_Activity_Three.java" />
+    <Content Include="unit7\lesson3\U7L3Q1\runner_U7_L3_Activity_One.java" />
+    <Content Include="unit7\lesson3\U7L3Q1\U7_L3_Activity_One.java" />
+    <Content Include="unit7\lesson3\U7L3Q2\runner_U7_L3_Activity_Two.java" />
+    <Content Include="unit7\lesson3\U7L3Q2\U7_L3_Activity_Two.java" />
+    <Content Include="unit7\lesson4\U7L4Q1\runner_U7_L4_Activity_One.java" />
+    <Content Include="unit7\lesson4\U7L4Q1\U7_L4_Activity_One.java" />
+    <Content Include="unit7\lesson4\U7L4Q2\runner_U7_L4_Activity_Two.java" />
+    <Content Include="unit7\lesson4\U7L4Q2\U7_L4_Activity_Two.java" />
+    <Content Include="unit7\lesson5\U7L5Q1\runner_U7_L5_Activity_One.java" />
+    <Content Include="unit7\lesson5\U7L5Q1\U7_L5_Activity_One.java" />
+    <Content Include="unit7\lesson5\U7L5Q2\runner_U7_L5_Activity_Two.java" />
+    <Content Include="unit7\lesson5\U7L5Q2\U7_L5_Activity_Two.java" />
+    <Content Include="unit7\lesson6\U7L6Q1\runner_U7_L6_Activity_One.java" />
+    <Content Include="unit7\lesson6\U7L6Q1\U7_L6_Activity_One.java" />
+    <Content Include="unit7\lesson6\U7L6Q2\runner_U7_L6_Activity_Two.java" />
+    <Content Include="unit7\lesson6\U7L6Q2\U7_L6_Activity_Two.java" />
+    <Content Include="unit7\U7_Assignment\Game.java" />
+    <Content Include="unit7\U7_Assignment\GameWheel.java" />
+    <Content Include="unit7\U7_Assignment\runner_GameWheel.java" />
+    <Content Include="unit7\U7_Assignment\Slice.java" />
+    <Content Include="unit8\lesson1\U8L1Q1.java" />
+    <Content Include="unit8\lesson1\U8L1Q2.java" />
+    <Content Include="unit8\lesson2\runner_TemperatureMonth.java" />
+    <Content Include="unit8\lesson2\TemperatureMonth.java" />
+    <Content Include="unit8\U8_Assignment\Battleship.java" />
+    <Content Include="unit8\U8_Assignment\Board.java" />
+    <Content Include="unit9\celebrity\Celebrity.java" />
+    <Content Include="unit9\celebrity\CelebrityFrame.java" />
+    <Content Include="unit9\celebrity\CelebrityGame.java" />
+    <Content Include="unit9\celebrity\CelebrityPanel.java" />
+    <Content Include="unit9\celebrity\CelebrityRunner.java" />
+    <Content Include="unit9\celebrity\LiteratureCelebrity.java" />
+    <Content Include="unit9\celebrity\MyProgram.java" />
+    <Content Include="unit9\celebrity\StartPanel.java" />
+    <Content Include="unit9\lesson1\Coffee.java" />
+    <Content Include="unit9\lesson1\runner_Coffee.java" />
+    <Content Include="unit9\lesson1\SpecialityCoffee.java" />
+    <Content Include="unit9\lesson2\U9L2Q1.java" />
+    <Content Include="unit9\lesson2\U9L2Q2.java" />
+    <Content Include="unit9\lesson3\Animal.java" />
+    <Content Include="unit9\lesson3\Cow.java" />
+    <Content Include="unit9\lesson3\Farm.java" />
+    <Content Include="unit9\lesson3\Farmer.java" />
+    <Content Include="unit9\lesson3\Pig.java" />
+    <Content Include="unit9\lesson3\runner_Farm.java" />
+    <Content Include="unit9\lesson3\Sheep.java" />
+    <Content Include="unit9\U9_Assignment\Captain.java" />
+    <Content Include="unit9\U9_Assignment\Coach.java" />
+    <Content Include="unit9\U9_Assignment\Person.java" />
+    <Content Include="unit9\U9_Assignment\runner_Ultimate.java" />
+    <Content Include="unit9\U9_Assignment\UltimatePlayer.java" />
+    <Content Include="unit9\U9_Assignment\UltimateTeam.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
+    <None Include="unit10\lesson3\README.md" />
+    <None Include="unit10\lesson4\README.md" />
+    <None Include="unit4\consumer-review\activity1\cleanSentiment.csv" />
+    <None Include="unit4\consumer-review\activity2\cleanSentiment.csv" />
+    <None Include="unit4\consumer-review\activity3\cleanSentiment.csv" />
+    <None Include="unit4\consumer-review\activity4\cleanSentiment.csv" />
+    <None Include="unit4\consumer-review\activity5\README.md" />
+    <None Include="unit4\consumer-review\activity5\RESPONSES.md" />
+    <None Include="unit4\lesson6\README.md" />
+    <None Include="unit5\lesson9\README.md" />
+    <None Include="unit7\data-lab\README.md" />
+    <None Include="unit7\lesson7\README.md" />
+    <None Include="unit9\celebrity\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
