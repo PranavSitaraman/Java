@@ -23,13 +23,17 @@ public class j2048Controller
 					move = in.nextLine();
 				} while(!move.equals("w") && !move.equals("a") && !move.equals("s") && !move.equals("d") && !move.equals("q"));
 			}
+			boolean moved = false;
 			if (move.equals("q")) break;
-			else if (move.equals("w")) model.shiftUp(board);
-			else if (move.equals("a")) model.shiftLeft(board);
-			else if (move.equals("s")) model.shiftDown(board);
-			else if (move.equals("d")) model.shiftRight(board);
-			model.spawn(board);
-			view.draw(board);
+			else if (move.equals("w")) moved = model.shiftUp(board);
+			else if (move.equals("a")) moved = model.shiftLeft(board);
+			else if (move.equals("s")) moved = model.shiftDown(board);
+			else if (move.equals("d")) moved = model.shiftRight(board);
+			if (moved)
+			{
+				model.spawn(board);
+				view.draw(board);
+			}
 		}
 		System.out.println("Sorry, you lost!");
 	}

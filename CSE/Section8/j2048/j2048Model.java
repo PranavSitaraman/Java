@@ -60,8 +60,9 @@ public class j2048Model
 		if (type > 0) board[x][y] = 2;
 		else board[x][y] = 4;
 	}
-	public void shiftLeft(int[][] board)
+	public boolean shiftLeft(int[][] board)
 	{
+		boolean change = false;
 		boolean changed;
 		do
 		{
@@ -74,7 +75,11 @@ public class j2048Model
 					{
 						for (int k = j; k < DIM - 1; k++)
 						{
-							if (board[i][k] != board[i][k + 1]) changed = true;
+							if (board[i][k] != board[i][k + 1])
+							{
+								changed = true;
+								change = true;
+							}
 							board[i][k] = board[i][k + 1];
 						}
 						board[i][DIM - 1] = 0;
@@ -88,6 +93,7 @@ public class j2048Model
 			{
 				if (board[i][j] != 0 && board[i][j] == board[i][j + 1])
 				{
+					change = true;
 					board[i][j] *= 2;
 					board[i][j + 1] = 0;
 				}
@@ -104,7 +110,11 @@ public class j2048Model
 					{
 						for (int k = j; k < DIM - 1; k++)
 						{
-							if (board[i][k] != board[i][k + 1]) changed = true;
+							if (board[i][k] != board[i][k + 1])
+							{
+								changed = true;
+								change = true;
+							}
 							board[i][k] = board[i][k + 1];
 						}
 						board[i][DIM - 1] = 0;
@@ -112,10 +122,12 @@ public class j2048Model
 				}
 			}
 		} while (changed);
+		return change;
 	}
-	public void shiftRight(int[][] board)
+	public boolean shiftRight(int[][] board)
 	{
 		boolean changed;
+		boolean change = false;
 		do
 		{
 			changed = false;
@@ -127,7 +139,11 @@ public class j2048Model
 					{
 						for (int k = j; k > 0; k--)
 						{
-							if (board[i][k] != board[i][k - 1]) changed = true;
+							if (board[i][k] != board[i][k - 1])
+							{
+								changed = true;
+								change = true;
+							}
 							board[i][k] = board[i][k - 1];
 						}
 						board[i][0] = 0;
@@ -141,6 +157,7 @@ public class j2048Model
 			{
 				if (board[i][j] != 0 && board[i][j] == board[i][j - 1])
 				{
+					change = true;
 					board[i][j] *= 2;
 					board[i][j - 1] = 0;
 				}
@@ -157,7 +174,11 @@ public class j2048Model
 					{
 						for (int k = j; k > 0; k--)
 						{
-							if (board[i][k] != board[i][k - 1]) changed = true;
+							if (board[i][k] != board[i][k - 1])
+							{
+								change = true;
+								changed = true;
+							}
 							board[i][k] = board[i][k - 1];
 						}
 						board[i][0] = 0;
@@ -165,10 +186,12 @@ public class j2048Model
 				}
 			}
 		} while (changed);
+		return change;
 	}
-	public void shiftUp(int[][] board)
+	public boolean shiftUp(int[][] board)
 	{
 		boolean changed;
+		boolean change = false;
 		do
 		{
 			changed = false;
@@ -180,7 +203,11 @@ public class j2048Model
 					{
 						for (int k = i; k < DIM - 1; k++)
 						{
-							if (board[k][j] != board[k + 1][j]) changed = true;
+							if (board[k][j] != board[k + 1][j])
+							{
+								changed = true;
+								change = true;
+							}
 							board[k][j] = board[k + 1][j];
 						}
 						board[DIM - 1][j] = 0;
@@ -194,6 +221,7 @@ public class j2048Model
 			{
 				if (board[i][j] != 0 && board[i][j] == board[i + 1][j])
 				{
+					change = true;
 					board[i][j] *= 2;
 					board[i + 1][j] = 0;
 				}
@@ -210,7 +238,11 @@ public class j2048Model
 					{
 						for (int k = i; k < DIM - 1; k++)
 						{
-							if (board[k][j] != board[k + 1][j]) changed = true;
+							if (board[k][j] != board[k + 1][j])
+							{
+								change = true;
+								changed = true;
+							}
 							board[k][j] = board[k + 1][j];
 						}
 						board[DIM - 1][j] = 0;
@@ -218,9 +250,11 @@ public class j2048Model
 				}
 			}
 		} while (changed);
+		return change;
 	}
-	public void shiftDown(int[][] board)
+	public boolean shiftDown(int[][] board)
 	{
+		boolean change = false;
 		boolean changed;
 		do
 		{
@@ -233,7 +267,11 @@ public class j2048Model
 					{
 						for (int k = i; k > 0; k--)
 						{
-							if (board[k][j] != board[k - 1][j]) changed = true;
+							if (board[k][j] != board[k - 1][j])
+							{
+								changed = true;
+								change = true;
+							}
 							board[k][j] = board[k - 1][j];
 						}
 						board[0][j] = 0;
@@ -247,6 +285,7 @@ public class j2048Model
 			{
 				if (board[i][j] != 0 && board[i][j] == board[i - 1][j])
 				{
+					change = true;
 					board[i][j] *= 2;
 					board[i - 1][j] = 0;
 				}
@@ -263,7 +302,11 @@ public class j2048Model
 					{
 						for (int k = i; k > 0; k--)
 						{
-							if (board[k][j] != board[k - 1][j]) changed = true;
+							if (board[k][j] != board[k - 1][j])
+							{
+								changed = true;
+								change = true;
+							}
 							board[k][j] = board[k - 1][j];
 						}
 						board[0][j] = 0;
@@ -271,5 +314,6 @@ public class j2048Model
 				}
 			}
 		} while (changed);
+		return change;
 	}
 }
