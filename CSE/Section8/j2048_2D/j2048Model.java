@@ -1,9 +1,9 @@
-package Section8.j2048;
+package Section8.j2048_2D;
 import java.util.*;
 public class j2048Model
 {
-	int score;
-	int DIM;
+	private int score;
+	private int DIM;
 	public j2048Model(int DIM) { this.DIM = DIM; }
 	public j2048Model() { this(4); }
 	public void init(int[][] board)

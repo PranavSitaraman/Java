@@ -1,8 +1,8 @@
-package Section8.j2048;
+package Section8.j2048_2D;
 import java.util.*;
 public class j2048View
 {
-	int DIM;
+	private int DIM;
 	public j2048View(int DIM) { this.DIM = DIM; }
 	public j2048View() { this(4); }
 	public void draw(int[][] board)

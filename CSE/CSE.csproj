@@ -202,9 +202,12 @@
     <Content Include="Section7\Project\Minimax.java" />
     <Content Include="Section7\Project\Move.java" />
     <Content Include="Section7\Project\TicTacToe.java" />
-    <Content Include="Section8\j2048\j2048Controller.java" />
-    <Content Include="Section8\j2048\j2048Model.java" />
-    <Content Include="Section8\j2048\j2048View.java" />
+    <Content Include="Section8\j2048_1D\j2048Controller.java" />
+    <Content Include="Section8\j2048_1D\j2048Model.java" />
+    <Content Include="Section8\j2048_1D\j2048View.java" />
+    <Content Include="Section8\j2048_2D\j2048Controller.java" />
+    <Content Include="Section8\j2048_2D\j2048Model.java" />
+    <Content Include="Section8\j2048_2D\j2048View.java" />
     <Content Include="Section8\ArrayListsDemo\ArrayIterator.java" />
     <Content Include="Section8\ArrayListsDemo\ArrayListDemo.java" />
     <Content Include="Section8\ArrayListsDemo\ArrayListOperations.java" />
