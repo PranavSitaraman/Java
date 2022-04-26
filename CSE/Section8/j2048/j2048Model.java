@@ -20,6 +20,11 @@ public class j2048Model
 			while (board[x][y] != 0);
 			board[x][y] = 2;
 		}
+		score = 0;
+	}
+	public int getScore()
+	{
+		return score;
 	}
 	public boolean full(int[][] board)
 	{
@@ -95,6 +100,7 @@ public class j2048Model
 				{
 					change = true;
 					board[i][j] *= 2;
+					score += board[i][j];
 					board[i][j + 1] = 0;
 				}
 			}
@@ -159,6 +165,7 @@ public class j2048Model
 				{
 					change = true;
 					board[i][j] *= 2;
+					score += board[i][j];
 					board[i][j - 1] = 0;
 				}
 			}
@@ -223,6 +230,7 @@ public class j2048Model
 				{
 					change = true;
 					board[i][j] *= 2;
+					score += board[i][j];
 					board[i + 1][j] = 0;
 				}
 			}
@@ -287,6 +295,7 @@ public class j2048Model
 				{
 					change = true;
 					board[i][j] *= 2;
+					score += board[i][j];
 					board[i - 1][j] = 0;
 				}
 			}

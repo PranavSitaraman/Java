@@ -13,7 +13,7 @@ public class j2048Controller
 		view.draw(board);
 		while (model.hasMove(board))
 		{
-			System.out.print("Enter your move: ");
+			System.out.print("Move: ");
 			String move = in.nextLine();
 			if (!move.equals("w") && !move.equals("a") && !move.equals("s") && !move.equals("d") && !move.equals("q"))
 			{
@@ -32,6 +32,7 @@ public class j2048Controller
 			if (moved)
 			{
 				model.spawn(board);
+				System.out.println("Current score: " + model.getScore());
 				view.draw(board);
 			}
 		}
