@@ -75,7 +75,11 @@ public class main
 		"Section7 - PrisonTest_5 - PrisonTest",
 		"Section7 - PrisonTest_6 - PrisonTest",
 		"Section7 - ProblemSet7",
-		"Section7 - Project - Game"
+		"Section7 - Project - Game",
+		"Section8 - ArraysEx - ArrayEx1",
+		"Section8 - ArraysEx - ComputeAvg",
+		"Section8 - ArraysEx - ArrayEx2",
+		"Section8 - j2048 - j2048Controller"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -146,7 +150,11 @@ public class main
 		new Call() { public void call() { Section7.PrisonTest_5.PrisonTest.main(null); } },
 		new Call() { public void call() { Section7.PrisonTest_6.PrisonTest.main(null); } },
 		new Call() { public void call() { Section7.ProblemSet7.ProblemSet07.main(null); } },
-		new Call() { public void call() { Section7.Project.TicTacToe.main(null); } }
+		new Call() { public void call() { Section7.Project.TicTacToe.main(null); } },
+		new Call() { public void call() { Section8.ArraysEx.ArrayEx1.main(null); } },
+		new Call() { public void call() { Section8.ArraysEx.ComputeAvg.main(null); } },
+		new Call() { public void call() { Section8.ArraysEx.ArrayEx2.main(null); } },
+		new Call() { public void call() { Section8.j2048.j2048Controller.main(null); } },
 	};
 	public static void main(String args[]) throws IOException
 	{
