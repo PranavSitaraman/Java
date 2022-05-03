@@ -80,7 +80,9 @@ public class main
 		"Section8 - ArraysEx - ComputeAvg",
 		"Section8 - ArraysEx - ArrayEx2",
 		"Section8 - j20481D - j2048Controller",
-		"Section8 - j20482D - j2048Controller"
+		"Section8 - j20482D - j2048Controller",
+		"Section8 - ArrayListsEx - ArrayListEx1",
+		"Section8 - ArrayListsEx - ArrayListEx2"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -156,7 +158,9 @@ public class main
 		new Call() { public void call() { Section8.ArraysEx.ComputeAvg.main(null); } },
 		new Call() { public void call() { Section8.ArraysEx.ArrayEx2.main(null); } },
 		new Call() { public void call() { Section8.j2048_1D.j2048Controller.main(null); } },
-		new Call() { public void call() { Section8.j2048_2D.j2048Controller.main(null); } }
+		new Call() { public void call() { Section8.j2048_2D.j2048Controller.main(null); } },
+		new Call() { public void call() { Section8.ArrayListsEx.ArrayListEx1.main(null); } },
+		new Call() { public void call() { Section8.ArrayListsEx.ArrayListEx2.main(null); } }
 	};
 	public static void main(String args[]) throws IOException
 	{
