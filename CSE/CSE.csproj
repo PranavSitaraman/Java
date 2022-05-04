@@ -202,6 +202,13 @@
     <Content Include="Section7\Project\Minimax.java" />
     <Content Include="Section7\Project\Move.java" />
     <Content Include="Section7\Project\TicTacToe.java" />
+    <Content Include="Section8\ArrayListProject\Analyzer.java" />
+    <Content Include="Section8\ArrayListProject\AnalyzerDriver.java" />
+    <Content Include="Section8\ArrayListProject\loops.txt" />
+    <Content Include="Section8\ArrayListProject\objects.txt" />
+    <Content Include="Section8\ArrayListProject\sotu2016.txt" />
+    <Content Include="Section8\ArrayListProject\test.txt" />
+    <Content Include="Section8\ArrayListProject\Word.java" />
     <Content Include="Section8\j2048_1D\j2048Controller.java" />
     <Content Include="Section8\j2048_1D\j2048Model.java" />
     <Content Include="Section8\j2048_1D\j2048View.java" />
