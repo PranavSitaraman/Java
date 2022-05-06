@@ -235,7 +235,6 @@
     <Content Include="Section8\DebuggingEx\BoundaryTesting.java" />
     <Content Include="Section8\DebuggingEx\ComputeTime.java" />
     <Content Include="Section8\DebuggingEx\MaxIntegers.java" />
-    <Content Include="Section8\DebuggingEx\MaxIntegersUpdated.java" />
     <Content Include="Section8\ExceptionHandling\ArrayIndexDemo.java" />
     <Content Include="Section8\ExceptionHandling\CheckedException.java" />
     <Content Include="Section8\ExceptionHandling\ExceptionDemo.java" />
@@ -244,13 +243,9 @@
     <Content Include="Section8\ExceptionHandling\NullPointerDemo.java" />
     <Content Include="Section8\ExceptionHandling\ThrowsDemo.java" />
     <Content Include="Section8\ExceptionsEx\Calculator.java" />
-    <Content Include="Section8\ExceptionsEx\CalculatorSoln.java" />
     <Content Include="Section8\ExceptionsEx\ExceptionEx1.java" />
-    <Content Include="Section8\ExceptionsEx\ExceptionEx1Soln.java" />
     <Content Include="Section8\ExceptionsEx\MultiCatch.java" />
-    <Content Include="Section8\ExceptionsEx\MultiCatchSoln.java" />
     <Content Include="Section8\ExceptionsEx\ShoppingCart.java" />
-    <Content Include="Section8\ExceptionsEx\ShoppingCartSoln.java" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />

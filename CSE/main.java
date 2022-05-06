@@ -83,7 +83,11 @@ public class main
 		"Section8 - j20482D - j2048Controller",
 		"Section8 - ArrayListsEx - ArrayListEx1",
 		"Section8 - ArrayListsEx - ArrayListEx2",
-		"Section8 - ArrayListProject - AnalyzerDriver"
+		"Section8 - ArrayListProject - AnalyzerDriver",
+		"Section8 - ExceptionsEx - ExceptionEx1",
+		"Section8 - ExceptionsEx - ShoppingCart",
+		"Section8 - DebuggingEx - MaxIntegers",
+		"Section8 - DebuggingEx - ComputeTime"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -162,7 +166,11 @@ public class main
 		new Call() { public void call() { Section8.j2048_2D.j2048Controller.main(null); } },
 		new Call() { public void call() { Section8.ArrayListsEx.ArrayListEx1.main(null); } },
 		new Call() { public void call() { Section8.ArrayListsEx.ArrayListEx2.main(null); } },
-		new Call() { public void call() { Section8.ArrayListProject.AnalyzerDriver.main(null); } }
+		new Call() { public void call() { Section8.ArrayListProject.AnalyzerDriver.main(null); } },
+		new Call() { public void call() { Section8.ExceptionsEx.ExceptionEx1.main(null); } },
+		new Call() { public void call() { Section8.ExceptionsEx.ShoppingCart.main(null); } },
+		new Call() { public void call() { Section8.DebuggingEx.MaxIntegers.main(null); } },
+		new Call() { public void call() { Section8.DebuggingEx.ComputeTime.main(null); } }
 	};
 	public static void main(String args[]) throws IOException
 	{

@@ -4,26 +4,21 @@
  * and open the template in the editor.
  */
 package Section8.ExceptionsEx;
-
-/**
- *
- * @author anshenoy
- */
-public class ExceptionEx1 {
-
-    public static void main(String args[]) {
-
+public class ExceptionEx1
+{
+    public static void main(String args[])
+    {
         int[] nums = {3, 2, 6, 1};
         badUse(nums);
     }
-
-    public static void badUse(int[] vals) {
+    public static void badUse(int[] vals)
+    {
         int total = 0;
-
-        for (int i = 0; i < vals.length; i++) {
+        for (int i = 0; i < vals.length; i++)
+        {
             int index = vals[i];
-            total += vals[index];
+            total += index;
         }
-         System.out.println(total);
+        System.out.println(total);
     }
 }
