@@ -246,6 +246,10 @@
     <Content Include="Section8\ExceptionsEx\ExceptionEx1.java" />
     <Content Include="Section8\ExceptionsEx\MultiCatch.java" />
     <Content Include="Section8\ExceptionsEx\ShoppingCart.java" />
+    <Content Include="Section8\ProblemSet8\Game.java" />
+    <Content Include="Section8\ProblemSet8\ProblemSet8.java" />
+    <Content Include="Section8\ProblemSet8\Scheduler.java" />
+    <Content Include="Section8\ProblemSet8\Team.java" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />

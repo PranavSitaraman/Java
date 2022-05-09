@@ -87,7 +87,8 @@ public class main
 		"Section8 - ExceptionsEx - ExceptionEx1",
 		"Section8 - ExceptionsEx - ShoppingCart",
 		"Section8 - DebuggingEx - MaxIntegers",
-		"Section8 - DebuggingEx - ComputeTime"
+		"Section8 - DebuggingEx - ComputeTime",
+		"Section8 - ProblemSet8"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -170,7 +171,8 @@ public class main
 		new Call() { public void call() { Section8.ExceptionsEx.ExceptionEx1.main(null); } },
 		new Call() { public void call() { Section8.ExceptionsEx.ShoppingCart.main(null); } },
 		new Call() { public void call() { Section8.DebuggingEx.MaxIntegers.main(null); } },
-		new Call() { public void call() { Section8.DebuggingEx.ComputeTime.main(null); } }
+		new Call() { public void call() { Section8.DebuggingEx.ComputeTime.main(null); } },
+		new Call() { public void call() { Section8.ProblemSet8.ProblemSet8.main(null); } }
 	};
 	public static void main(String args[]) throws IOException
 	{
@@ -182,7 +184,7 @@ public class main
 		while (true)
 		{
 			System.out.print("Enter selection: ");
-			int choice = in.nextInt();
+			int choice = Integer.parseInt(in.nextLine());
 			if (choice > funcs.length || choice <= 0)
 			{
 				break;
