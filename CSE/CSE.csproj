@@ -250,6 +250,17 @@
     <Content Include="Section8\ProblemSet8\ProblemSet8.java" />
     <Content Include="Section8\ProblemSet8\Scheduler.java" />
     <Content Include="Section8\ProblemSet8\Team.java" />
+    <Content Include="Section9\GoalTest\Audio\Note5.wav" />
+    <Content Include="Section9\GoalTest\Goal.java" />
+    <Content Include="Section9\GoalTest\GoalTest.java" />
+    <Content Include="Section9\GoalTest\Images\Duke.png" />
+    <Content Include="Section9\GoalTest\Images\Glove.png" />
+    <Content Include="Section9\JavaFXTest2\JavaFXTest2.java" />
+    <Content Include="Section9\JavaFXTest1\JavaFXTest1.java" />
+    <Content Include="Section9\ProblemSet9\Center.java" />
+    <Content Include="Section9\ProblemSet9\Dorm.java" />
+    <Content Include="Section9\ProblemSet9\Images\Campus.png" />
+    <Content Include="Section9\ProblemSet9\App.java" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />

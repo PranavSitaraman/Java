@@ -1,9 +1,6 @@
 import java.io.*;
 import java.util.*;
-interface Call
-{
-  void call();
-}
+interface Call { void call(); }
 public class main
 {
 	public static String[] funcNames = new String[]
@@ -88,7 +85,11 @@ public class main
 		"Section8 - ExceptionsEx - ShoppingCart",
 		"Section8 - DebuggingEx - MaxIntegers",
 		"Section8 - DebuggingEx - ComputeTime",
-		"Section8 - ProblemSet8"
+		"Section8 - ProblemSet8 - ProblemSet8",
+		"Section9 - JavaFXTest1 - JavaFXTest1",
+		"Section9 - JavaFXTest2 - JavaFXTest2",
+		"Section9 - GoalTest - GoalTest",
+		"Section9 - ProblemSet9 - App"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -172,7 +173,11 @@ public class main
 		new Call() { public void call() { Section8.ExceptionsEx.ShoppingCart.main(null); } },
 		new Call() { public void call() { Section8.DebuggingEx.MaxIntegers.main(null); } },
 		new Call() { public void call() { Section8.DebuggingEx.ComputeTime.main(null); } },
-		new Call() { public void call() { Section8.ProblemSet8.ProblemSet8.main(null); } }
+		new Call() { public void call() { Section8.ProblemSet8.ProblemSet8.main(null); } },
+		new Call() { public void call() { Section9.JavaFXTest1.JavaFXTest1.main(null); } },
+		new Call() { public void call() { Section9.JavaFXTest2.JavaFXTest2.main(null); } },
+		new Call() { public void call() { Section9.GoalTest.GoalTest.main(null); } },
+		new Call() { public void call() { Section9.ProblemSet9.App.main(null); } }
 	};
 	public static void main(String args[]) throws IOException
 	{
