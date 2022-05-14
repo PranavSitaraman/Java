@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Section10\ProblemSet10\Problem2.png" />
+    <Content Include="Section10\ProblemSet10\Problem6.java" />
+    <Content Include="Section10\ProblemSet10\Problem5.java" />
+    <Content Include="Section10\ProblemSet10\Problem3.java" />
+    <Content Include="Section10\ProblemSet10\Problem1.java" />
+    <Content Include="Section10\ProblemSet10\Problem3.png" />
+    <Content Include="Section10\ProblemSet10\Problem6.png" />
+    <Content Include="Section10\ProblemSet10\Problem7.png" />
+    <Content Include="Section10\ProblemSet10\Problem8.png" />
     <Content Include="Section4\ImportDemo\FullyQualifiedName.java" />
     <Content Include="Section4\ImportDemo\Welcome.java" />
     <Content Include="Section4\ImportDemo\Welcome2.java" />
@@ -264,6 +273,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />
+    <None Include="Section10\ProblemSet10\Problem1.class" />
+    <None Include="Section10\ProblemSet10\Problem4.pdf" />
+    <None Include="Section10\ProblemSet10\Vocab.pdf" />
     <None Include="Section2\ProblemSet2_3.docx" />
   </ItemGroup>
   <ItemGroup>

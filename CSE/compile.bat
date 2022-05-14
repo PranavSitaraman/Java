@@ -1,5 +1,5 @@
 del Output /S /Q
 mkdir Output
-javac --module-path "C:/Users/Pranav Sitaraman/Documents/Programming/Java/JavaFX/lib" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web,javafx.swt *.java -d Output
+"C:/Program Files/Java/jdk1.8.0_333/bin/javac.exe" -d Output *.java
 cd Output
-start java --module-path "C:/Users/Pranav Sitaraman/Documents/Programming/Java/JavaFX/lib" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web,javafx.swt main
+start "Java" "C:/Program Files/Java/jdk1.8.0_333/bin/java.exe" main

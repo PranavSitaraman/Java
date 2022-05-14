@@ -89,7 +89,8 @@ public class main
 		"Section9 - JavaFXTest1 - JavaFXTest1",
 		"Section9 - JavaFXTest2 - JavaFXTest2",
 		"Section9 - GoalTest - GoalTest",
-		"Section9 - ProblemSet9 - App"
+		"Section9 - ProblemSet9 - App",
+		"Section10 - ProblemSet10 - Problem1"
 	};
 	public static Call[] funcs = new Call[]
 	{
@@ -177,7 +178,8 @@ public class main
 		new Call() { public void call() { Section9.JavaFXTest1.JavaFXTest1.main(null); } },
 		new Call() { public void call() { Section9.JavaFXTest2.JavaFXTest2.main(null); } },
 		new Call() { public void call() { Section9.GoalTest.GoalTest.main(null); } },
-		new Call() { public void call() { Section9.ProblemSet9.App.main(null); } }
+		new Call() { public void call() { Section9.ProblemSet9.App.main(null); } },
+		new Call() { public void call() { try { Runtime.getRuntime().exec("cmd /c start \"AppletViewer\" /wait /d \"C:/Users/Pranav Sitaraman/Documents/Programming/Java/CSE/Section10/ProblemSet10\" \"C:/Program Files/Java/jdk1.8.0_333/bin/javac.exe\" \"Problem1.java\""); Runtime.getRuntime().exec("cmd /c start \"AppletViewer\" /wait /d \"C:/Users/Pranav Sitaraman/Documents/Programming/Java/CSE/Section10/ProblemSet10\" \"C:/Program Files/Java/jdk1.8.0_333/bin/appletviewer.exe\" \"Problem1.java\""); } catch (Exception e) { } }}
 	};
 	public static void main(String args[]) throws IOException
 	{
