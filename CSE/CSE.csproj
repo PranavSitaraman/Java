@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connect4\Arrow.png" />
     <Content Include="Connect4\Board.java" />
     <Content Include="Connect4\Flowchart.png" />
     <Content Include="Connect4\Game.java" />
+    <Content Include="Connect4\Outcome.java" />
     <Content Include="Connect4\Minimax.java" />
-    <Content Include="Connect4\Arrow.java" />
+    <Content Include="Connect4\Iteration.java" />
     <Content Include="Connect4\Tile.java" />
     <Content Include="Connect4\Result.java" />
     <Content Include="Connect4\Move.java" />
