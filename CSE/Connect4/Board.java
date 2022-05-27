@@ -1,29 +1,40 @@
 package Connect4;
 import java.util.*;
-import java.lang.Math;
+import java.util.concurrent.*;
+import java.io.*;
+import java.lang.*;
+import javafx.application.*;
+import javafx.animation.*;
+import javafx.animation.PathTransition.*;
+import javafx.event.*;
+import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+import javafx.scene.image.*;
+import javafx.scene.input.*;
+import javafx.scene.paint.*;
+import javafx.scene.shape.*;
+import javafx.stage.*;
+import javafx.util.*;
 public class Board
 {
-    // 2D array
     public char[][] board;
-    // constructor
     public Board()
     {
         board = new char[6][7];
-        for (int i = 0; i < board.length; i++)
-        {
-            for (int j = 0; j < board[i].length; j++)
-            {
-                board[i][j] = ' ';
-            }
-        }
+        for (int i = 0; i < board.length; i++) for (int j = 0; j < board[i].length; j++) board[i][j] = ' ';
     }
-    // checks if the board is not full yet
     public boolean full()
     {
         for (int i = 0; i < board.length; i++) for (int j = 0; j < board[i].length; j++) if (board[i][j] == ' ') return false;
         return true;
     }
-    // evaluates if the board has a winning or losing position
+    public int getTop(int col)
+    {
+        int row = board.length - 1;
+        while (row >= 0 && board[row][col] != ' ') row--;
+        return row;
+    }
     public int evaluate()
     {
         for (int i = 0; i < board.length; i++)
@@ -80,55 +91,29 @@ public class Board
         }
         return 0;
     }
-    // prints the current state of the board
-    public void printboard()
+    public void print()
     {
         System.out.print("\n    ");
-        for (int i = 0; i < board[0].length; i++)
-        {
-            System.out.print("----");
-        }
-        System.out.println("-");
-        System.out.print("    ");
-        for (int i = 0; i < board[0].length; i++)
-        {   
-            System.out.print("| ");
-            System.out.print(i + 1);
-            System.out.print(" ");
-        }
+        for (int i = 0; i < board[0].length; i++) System.out.print("----");
+        System.out.print("-\n    ");
+        for (int i = 0; i < board[0].length; i++) System.out.print("| " + (i + 1) + " ");
         System.out.println("|");
         for (int i = 0; i < board.length; i++)
         {
-            for (int j = 0; j <= board[0].length; j++)
-            {
-                System.out.print("----");
-            }
-            System.out.println("-");
-            System.out.print("| ");
-            System.out.print(i + 1);
-            System.out.print(" ");
-            for (int j = 0; j < board[0].length; j++)
-            {
-                System.out.print("| " + board[i][j] + " ");
-            }
+            for (int j = 0; j <= board[0].length; j++) System.out.print("----");
+            System.out.print("-\n| " + (i + 1) + " ");
+            for (int j = 0; j < board[0].length; j++) System.out.print("| " + board[i][j] + " ");
             System.out.println("|");
         }
-        for (int i = 0; i <= board[0].length; i++)
-        {
-            System.out.print("----");
-        }
-        System.out.println("-");
-        System.out.print("    ");
+        for (int i = 0; i <= board[0].length; i++) System.out.print("----");
+        System.out.print("-\n    ");
         for (int i = 0; i < board[0].length; i++)
         {
             if (Move.eval[i].value == Integer.MAX_VALUE) System.out.print("| ~ ");
             else System.out.print("| " + Move.eval[i].value + " ");
         }
         System.out.print("|\n    ");
-        for (int i = 0; i < board[0].length; i++)
-        {
-            System.out.print("----");
-        }
+        for (int i = 0; i < board[0].length; i++) System.out.print("----");
         System.out.println("-\n");
         for (int i = 0; i < board[0].length; i++)
         {
@@ -136,11 +121,5 @@ public class Board
             else System.out.println(Move.eval[i].value + " " + Move.eval[i].moves);
         }
         System.out.println();
-    }
-    public int getTop(int col)
-    {
-        int row = board.length - 1;
-        while (row >= 0 && board[row][col] != ' ') row--;
-        return row;
     }
 }

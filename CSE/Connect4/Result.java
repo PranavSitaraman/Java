@@ -1,12 +1,26 @@
 package Connect4;
 import java.util.*;
-import java.lang.Math;
-// defines the move object
+import java.util.concurrent.*;
+import java.io.*;
+import java.lang.*;
+import javafx.application.*;
+import javafx.animation.*;
+import javafx.animation.PathTransition.*;
+import javafx.event.*;
+import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+import javafx.scene.image.*;
+import javafx.scene.input.*;
+import javafx.scene.paint.*;
+import javafx.scene.shape.*;
+import javafx.stage.*;
+import javafx.util.*;
 public class Result
 {
-    public int value; // row of move
-    public ArrayList<Move> moves; // list of moves;
-    public Result(int value) // constructor
+    public int value;
+    public ArrayList<Move> moves;
+    public Result(int value)
     {
         this.value = value;
         moves = new ArrayList<Move>();

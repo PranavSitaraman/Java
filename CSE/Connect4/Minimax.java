@@ -1,16 +1,29 @@
 package Connect4;
 import java.util.*;
-import java.lang.Math;
+import java.util.concurrent.*;
+import java.io.*;
+import java.lang.*;
+import javafx.application.*;
+import javafx.animation.*;
+import javafx.animation.PathTransition.*;
+import javafx.event.*;
+import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+import javafx.scene.image.*;
+import javafx.scene.input.*;
+import javafx.scene.paint.*;
+import javafx.scene.shape.*;
+import javafx.stage.*;
+import javafx.util.*;
 public class Minimax
 {
-    // minimax with alpha-beta pruning
 	public static Result minimax(Board board, int depth, boolean maximum, int alpha, int beta)
     {
         int score = board.evaluate();
         if (score == 10) return new Result(score - depth);
         else if (score == -10) return new Result(score + depth);
         else if (board.full() || depth == 9) return new Result(0);
-        // maximize node
         if (maximum)
         {
             Result best = new Result(Integer.MIN_VALUE);
@@ -30,7 +43,6 @@ public class Minimax
             }
             return best;
         }
-        // minimize node
         else
         {
             Result best = new Result(Integer.MAX_VALUE);
