@@ -1,19 +1,19 @@
 package Connect4;
-import java.util.*;
-import java.util.concurrent.*;
 import java.io.*;
 import java.lang.*;
-import javafx.application.*;
+import java.util.*;
+import java.util.concurrent.*;
 import javafx.animation.*;
-import javafx.animation.PathTransition.*;
+import javafx.application.*;
 import javafx.event.*;
 import javafx.scene.*;
-import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
 import javafx.scene.input.*;
+import javafx.scene.layout.*;
 import javafx.scene.paint.*;
 import javafx.scene.shape.*;
+import javafx.scene.text.*;
 import javafx.stage.*;
 import javafx.util.*;
 public class Game
@@ -27,7 +27,6 @@ public class Game
         opponent = 'o';
         board = new Board();
         Move.updateEval(board);
-        board.print();
     }
     public Iteration play(int column)
     {
@@ -37,37 +36,17 @@ public class Game
         move.column = column;
         move.row = board.getTop(move.column);
         board.board[move.row][move.column] = player;
-        if (board.evaluate() == 10)
-        {
-            board.print();
-            System.out.println("Player wins!");
-            return new Iteration(new Move(0, 0), Outcome.USERWIN);
-        }
+        if (board.evaluate() == 10) return new Iteration(new Move(0, 0), Outcome.USERWIN);
         player = 'o'; opponent = 'x';
         Move.updateEval(board);
-        board.print();
         player = 'o'; opponent = 'x';
         Move.updateEval(board);
-        System.out.println("Computer's turn to play.");
         move = Move.computerMove(board);
         board.board[move.row][move.column] = player;
-        if (board.evaluate() == 10)
-        {
-            board.print();
-            System.out.println("Computer wins!");
-            return new Iteration(move, Outcome.COMPUTERWIN);
-        }
+        if (board.evaluate() == 10) return new Iteration(move, Outcome.COMPUTERWIN);
         player = 'x'; opponent = 'o';
         Move.updateEval(board);
-        board.print();
-        if (board.full())
-        {
-            System.out.println("Tie!");
-            return new Iteration(move, Outcome.TIE);
-        }
-        else
-        {
-            return new Iteration(move, Outcome.NOWIN);
-        }
+        if (board.full()) return new Iteration(move, Outcome.TIE);
+        else return new Iteration(move, Outcome.NOWIN);
     }
 }
