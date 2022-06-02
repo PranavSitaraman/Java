@@ -1,4 +1,4 @@
-package Connect4;
+package Section10.Connect4;
 import java.io.*;
 import java.lang.*;
 import java.util.*;
@@ -16,9 +16,18 @@ import javafx.scene.shape.*;
 import javafx.scene.text.*;
 import javafx.stage.*;
 import javafx.util.*;
-public class Tile
+public class Result
 {
-    public Rectangle rect;
-	public Circle circ;
-	public char value;
+    public int value;
+    public ArrayList<Move> moves;
+    public Result(int value)
+    {
+        this.value = value;
+        moves = new ArrayList<Move>();
+    }
+    public void add(int row, int col)
+    {
+        Move next = new Move(row, col);
+        moves.add(0, next);
+    }
 }

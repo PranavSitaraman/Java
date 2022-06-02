@@ -1,4 +1,4 @@
-package Connect4;
+package Section10.Connect4;
 import java.io.*;
 import java.lang.*;
 import java.util.*;

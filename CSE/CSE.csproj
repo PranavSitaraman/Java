@@ -43,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connect4\Arrow.png" />
-    <Content Include="Connect4\Board.java" />
-    <Content Include="Connect4\Flowchart.png" />
-    <Content Include="Connect4\Game.java" />
-    <Content Include="Connect4\Outcome.java" />
-    <Content Include="Connect4\Minimax.java" />
-    <Content Include="Connect4\Iteration.java" />
-    <Content Include="Connect4\Tile.java" />
-    <Content Include="Connect4\Result.java" />
-    <Content Include="Connect4\Move.java" />
-    <Content Include="Connect4\Connect4.java" />
-    <Content Include="Connect4\Video.mp4" />
+    <Content Include="Section10\Connect4\Arrow.png" />
+    <Content Include="Section10\Connect4\Board.java" />
+    <Content Include="Section10\Connect4\Flowchart.png" />
+    <Content Include="Section10\Connect4\Game.java" />
+    <Content Include="Section10\Connect4\Outcome.java" />
+    <Content Include="Section10\Connect4\Minimax.java" />
+    <Content Include="Section10\Connect4\Iteration.java" />
+    <Content Include="Section10\Connect4\Tile.java" />
+    <Content Include="Section10\Connect4\Result.java" />
+    <Content Include="Section10\Connect4\Move.java" />
+    <Content Include="Section10\Connect4\Connect4.java" />
+    <Content Include="Section10\Connect4\Video.mp4" />
     <Content Include="Section10\ProblemSet10\Problem2.png" />
     <Content Include="Section10\ProblemSet10\Problem6.java" />
     <Content Include="Section10\ProblemSet10\Problem5.java" />
@@ -286,9 +286,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />
-    <None Include="Connect4\Presentation.pdf" />
-    <None Include="Connect4\README.md" />
-    <None Include="Connect4\Slides.pptx" />
+    <None Include="Section10\Connect4\Presentation.pdf" />
+    <None Include="Section10\Connect4\README.md" />
+    <None Include="Section10\Connect4\Slides.pptx" />
     <None Include="Section10\ProblemSet10\Problem1.class" />
     <None Include="Section10\ProblemSet10\Problem4.pdf" />
     <None Include="Section10\ProblemSet10\Vocab.pdf" />
