@@ -54,6 +54,7 @@
     <Content Include="Connect4\Result.java" />
     <Content Include="Connect4\Move.java" />
     <Content Include="Connect4\Connect4.java" />
+    <Content Include="Connect4\Video.mp4" />
     <Content Include="Section10\ProblemSet10\Problem2.png" />
     <Content Include="Section10\ProblemSet10\Problem6.java" />
     <Content Include="Section10\ProblemSet10\Problem5.java" />
@@ -285,6 +286,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />
+    <None Include="Connect4\Presentation.pdf" />
+    <None Include="Connect4\README.md" />
+    <None Include="Connect4\Slides.pptx" />
     <None Include="Section10\ProblemSet10\Problem1.class" />
     <None Include="Section10\ProblemSet10\Problem4.pdf" />
     <None Include="Section10\ProblemSet10\Vocab.pdf" />
