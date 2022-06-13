@@ -65,6 +65,7 @@
     <Content Include="Section10\ProblemSet10\Problem7.png" />
     <Content Include="Section10\ProblemSet10\Problem8.png" />
     <Content Include="Section11\ProblemSet11\Problem4.java" />
+    <Content Include="Section11\WorldsHardestGame\WorldsHardestGame.java" />
     <Content Include="Section11\Vigenere\Vigenere.java" />
     <Content Include="Section11\Vigenere\Vigenere.png" />
     <Content Include="Section4\ImportDemo\FullyQualifiedName.java" />
